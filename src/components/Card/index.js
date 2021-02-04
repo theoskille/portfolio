@@ -1,9 +1,9 @@
 import React from 'react'
 import {Title, Date, Description, ActionButton, StyledContainer, StyledPhoto} from './CardElements'
-import coverPhoto from '../../assets/sortalgorithmvisualizercover.jpg';
-const Card = ({ title, date, description, actions }) => {
+
+const Card = ({ title, date, description, actions, animationDuration, coverPhoto }) => {
     return (
-        <StyledContainer>
+        <StyledContainer animationDuration={animationDuration}>
             <StyledPhoto src={coverPhoto} />
             <Title>{title}</Title>
             <Date>{date}</Date>

@@ -1,4 +1,15 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+`
+
 
 export const Title = styled.h2`
   color: #000;
@@ -12,6 +23,7 @@ export const Date = styled.div`
 export const Description = styled.p`
   color: #000;
   font-weight: 300;
+  height: 100px;
 `
 
 export const ActionButton = styled.button`
@@ -32,10 +44,12 @@ export const StyledContainer = styled.div`
   padding: 40px;
   background: #fff;
   max-width: 350px;
+  height: 600px;
   width: 100%;
   margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  animation: ${slideUp} ${props => props.animationDuration || '.25s'} cubic-bezier(.42,0,.84,1.37);
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -43,7 +57,7 @@ export const StyledContainer = styled.div`
 `
 
 export const StyledPhoto = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 300px;
   object-fit: cover;
 `
