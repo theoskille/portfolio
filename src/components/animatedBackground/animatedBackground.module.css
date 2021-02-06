@@ -2,8 +2,7 @@
 
 .area{
     position: relative;
-    background: #fff;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: #fff;    
     height: 100vh;
     z-index: -100px;
 }
