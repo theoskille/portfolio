@@ -13,6 +13,7 @@ const slideUp = keyframes`
 
 const ProjectList = styled.div`
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
     top: 50px;

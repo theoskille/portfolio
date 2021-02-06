@@ -25,6 +25,20 @@ export const NavLink = styled(Link)`
     }
 `
 
+export const HyperLink = styled.a`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+        color: #15cdfc;
+    }
+`
+
 export const Bars = styled(FaBars)`
     display: none;
     color: #fff;

@@ -26,27 +26,61 @@ export const Description = styled.p`
   height: 100px;
 `
 
-export const ActionButton = styled.button`
-  margin: 0 5px;
+export const YoutubeButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
   padding: 8px 14px;
-  background: rgba(155, 155, 155, 0.2);
+  background: #FF0000;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
   outline: 0;
   font-weight: 300;
+  height: 30px;
+  width: 150px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 10px;
+  :hover {
+    opacity: 0.8;
+  }
+` 
+export const GithubButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 8px 14px;
+  background: #24292e;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: 0;
+  font-weight: 300;
+  height: 30px;
+  width: 150px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
   :hover {
     opacity: 0.8;
   }
 ` 
 
 export const StyledContainer = styled.div`
+  position: relative;
   padding: 40px;
   background: #fff;
   max-width: 350px;
   height: 600px;
   width: 100%;
-  margin: auto;
+  margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   animation: ${slideUp} ${props => props.animationDuration || '.25s'} cubic-bezier(.42,0,.84,1.37);

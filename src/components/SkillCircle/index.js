@@ -11,6 +11,11 @@ const Circle = styled.div`
   justify-content: center;
   border-radius: 50%;
   margin: 5px;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-6px);
+  }
 `
 
 const SkillCircle = ({name, color}) => {

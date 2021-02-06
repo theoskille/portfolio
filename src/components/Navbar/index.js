@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavLink, Bars, NavMenu, HyperLink} from './NavbarElements'
 import linkdinIcon from '../../assets/linkdinIcon.png'
 import githubIcon from '../../assets/githubIcon.png'
 import logo from '../../assets/logo.png'
@@ -22,12 +22,12 @@ const Navbar = () => {
                     <NavLink to="/contact" activeStyle>
                         Contact
                     </NavLink>
-                    <NavLink to="/">
+                    <HyperLink href="https://www.linkedin.com/in/theo-skille-2b1741180/">
                     <img width="35px" height="30px" src={linkdinIcon}/>
-                    </NavLink>
-                    <NavLink to="https://github.com/theoskille">
+                    </HyperLink>
+                    <HyperLink href="https://github.com/theoskille">
                     <img src={githubIcon}/>
-                    </NavLink>
+                    </HyperLink>
                 </NavMenu>
             </Nav>
         </div>
